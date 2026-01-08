@@ -1,0 +1,28 @@
+:root{
+    --icbosluk: 10px;
+    --disbosluk: 20px;
+    --alan-arka-plan-renk: green;
+    --varsayilan-yazi-renk: white;
+}
+
+*{
+    transition: .3s all;
+
+}
+
+div{
+    background-color: var( --alan-arka-plan-renk);
+    color: var(--varsayilan-yazi-renk);
+    margin: var(--disbosluk);
+    padding: var(--icbosluk);
+}
+
+.sinif1:hover{
+    filter: blur(1px);
+}
+
+.kapsayici{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 100px 20% auto 1fr;
+}
