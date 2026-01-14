@@ -26,3 +26,21 @@ div{
     display: grid;
     grid-template-columns: 100px 20% auto 1fr;
 }
+
+.sinif3::before{
+    background-color: red;
+    content: "before kullaniyorum";
+    display: block;
+    margin-top: -30px;
+    width: 50%;
+    margin-left: -10px;
+}
+
+.sinif3::after{
+    background-color: red;
+    content: "after kullaniyorum";
+    margin-left: 220px;
+    display: block;
+    width: 50%;
+    margin-bottom: -30px;
+}
