@@ -1,0 +1,87 @@
+.btn, .hayvanlar div h3, header nav ul li a {
+  background-color: yellow;
+  color: red;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px blue;
+}
+.btn:hover, .hayvanlar div h3:hover, header nav ul li a:hover {
+  background-color: green;
+  color: white;
+  transition: 0.3s all;
+}
+
+header {
+  background-color: antiquewhite;
+  padding: 10px;
+  margin: 10px;
+}
+header nav {
+  background-color: aqua;
+  margin: 10px;
+  padding: 10px;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+header nav ul li {
+  background-color: aliceblue;
+  margin: 2px;
+  padding: 2px;
+}
+header nav ul li:hover {
+  background-color: red;
+  transition: 0.3s all;
+}
+
+.btn, .hayvanlar div h3, header nav ul li a {
+  background-color: yellow;
+  color: red;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px blue;
+}
+.btn:hover, .hayvanlar div h3:hover, header nav ul li a:hover {
+  background-color: green;
+  color: white;
+  transition: 0.3s all;
+}
+
+header {
+  background-color: antiquewhite;
+  padding: 10px;
+  margin: 10px;
+}
+header nav {
+  background-color: aqua;
+  margin: 10px;
+  padding: 10px;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+header nav ul li {
+  background-color: aliceblue;
+  margin: 2px;
+  padding: 2px;
+}
+header nav ul li:hover {
+  background-color: red;
+  transition: 0.3s all;
+}
+
+.hayvanlar {
+  background-color: aliceblue;
+}
+.hayvanlar div {
+  background-color: antiquewhite;
+}
+body {
+  background-color: rgba(34, 146, 83, 0.693);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+@import "menu";
+
+.hayvanlar{
+    background-color: aliceblue;
+    div {
+        background-color: antiquewhite;
+        h3{
+            @extend .btn;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.btn{
+    background-color: yellow;
+    color: red;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px blue;
+
+    &:hover{
+        background-color: green;
+        color: white;
+        transition:  .3s all;
+    }
+}
+
+
+header{
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+
+    nav{
+        background-color: aqua;
+        margin: 10px;
+        padding: 10px;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 10px;
+            
+            li{
+                background-color: aliceblue;
+                margin: 2px;
+                padding: 2px;
+
+                a{
+                   @extend .btn;
+                }
+
+                &:hover{
+                    background-color: red;
+                    transition: .3s all;
+                }
+
+            }
+        }
+    }
+}
+
