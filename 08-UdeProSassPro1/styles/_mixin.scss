@@ -44,6 +44,12 @@
     }
 }
 
+@mixin formItems{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 @mixin laptop{
     @media (max-width: 1300px) {
         @content;
