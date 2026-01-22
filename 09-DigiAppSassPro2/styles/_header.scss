@@ -1,0 +1,65 @@
+@use "variables";
+@use "mixin";
+
+.nav{
+    background-color: antiquewhite;
+    position: sticky;
+    width: 100%;
+    z-index: 10;
+    height: 500px;
+
+    &_header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem;
+        background-color: variables.$primary-color;
+        max-width: variables.$max-width;
+        margin: 0 auto;
+
+        .nav_logo{
+
+            a{
+                font-size: 1.25rem;
+                font-weight: 800;
+                color: variables.$white;
+                white-space: nowrap;
+            }
+        }
+
+        .nav_links{
+            background-color: variables.$primary-color;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            padding: 2rem;
+            z-index: -1;
+            transform: translateY(150px);
+
+            a{
+               color: variables.$white;
+               font-weight: 500;
+               font-size: 1rem;
+            }
+        }
+
+        .nav_btn{
+            display: none;
+        }
+
+        .nav_menu_btn{
+            background: none;
+            cursor: pointer;
+            i{
+                color: variables.$white;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}
