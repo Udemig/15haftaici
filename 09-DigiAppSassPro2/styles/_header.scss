@@ -2,11 +2,10 @@
 @use "mixin";
 
 .nav{
-    background-color: antiquewhite;
     position: sticky;
     width: 100%;
     z-index: 10;
-    height: 500px;
+    top: 0;
 
     &_header{
         display: flex;
@@ -39,7 +38,7 @@
             gap: 2rem;
             padding: 2rem;
             z-index: -1;
-            transform: translateY(150px);
+            transform: translateY(-100%);
 
             a{
                color: variables.$white;
@@ -62,4 +61,37 @@
         }
     }
 
+    //responsive
+    @include mixin.respond(md){
+       .nav{
+          &_header{
+             background-color: transparent;
+            }
+
+            &_logo{
+             a{
+                color: variables.$secondary-color;
+                }
+            }
+
+            &_links{
+              position: static;
+              transform: translateY(0);
+              flex-direction: row;
+              background-color: transparent;
+              a{
+                color: variables.$text-light;
+              }
+        }
+       }
+    }
+
+    @include mixin.respond(lg){
+        .nav{
+            &_btn{
+                display: block;
+            }
+        }
+    }
 }
+
